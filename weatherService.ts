@@ -1,3 +1,5 @@
+import { isConstructorDeclaration } from "typescript";
+
 // TODO: Define an interface for the Coordinates object
 interface Coordinates {
     latitude: number;  // The latitude of the location
@@ -12,7 +14,33 @@ interface Coordinates {
     temperature: number; // Current temperature
     condition: string; // Weather condition (e.g., sunny, rainy)
     forecast: string[]; // Five-day weather forecast
+    constructor(
+      city: string,
+   ) {
+  
+     this.city = city
 
+     constructor(
+      temperature: number,
+     ) {
+      this.temperature = temperature
+
+    constructor(
+      condition: string,
+    ){
+      this.condition = condition
+
+      constructor(
+        forecast: string,
+      ){
+        this.forecast = forecast
+     
+
+
+
+   
+  
+  
     
     
     
